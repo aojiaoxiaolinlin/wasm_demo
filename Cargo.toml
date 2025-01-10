@@ -2,11 +2,15 @@
 name = "hello-wasm"
 version = "0.1.0"
 edition = "2021"
-authors = ["linlin"]
+authors = ["LinLin"]
 description = "A sample project with wasm-pack"
+license = "MIT OR Apache-2.0"
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-wasm-bindgen="0.2"
+wasm-bindgen = "0.2"
+aes-gcm = "0.10"
+base64 = "0.22"
+getrandom = { version = "0.2", features = ["js"] }
